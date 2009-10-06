@@ -1,6 +1,7 @@
 ﻿//-----------------------------------------------------------------------
 // <copyright file="JsPack.cs" company="Andrew Arnott">
 //     Copyright (c) Andrew Arnott. All rights reserved.
+//     Licensed under the terms of the Microsoft Public License (Ms-PL)
 // </copyright>
 //-----------------------------------------------------------------------
 
