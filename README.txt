@@ -1,6 +1,9 @@
 This .targets file and associated .dll file provide the means to minify your
 C#/VB projects' embedded resources (.js and .css files).
 
+RELEASE NOTES: No .css minification is in place in this .targets file YET.
+               But there will be soon!
+
 == Applying automatic minification to your .js and .css embedded resources ==
 
 To apply to your project, copy the JsCssMinification.targets and MinifierMsBuildTask.dll files
