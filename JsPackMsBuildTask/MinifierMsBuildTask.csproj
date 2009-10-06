@@ -8,8 +8,8 @@
     <ProjectGuid>{AC231A51-EF60-437C-A33F-AF8ADEB8EB74}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JsPackMsBuildTask</RootNamespace>
-    <AssemblyName>JsPackMsBuildTask</AssemblyName>
+    <RootNamespace>MinifierMsBuildTask</RootNamespace>
+    <AssemblyName>MinifierMsBuildTask</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

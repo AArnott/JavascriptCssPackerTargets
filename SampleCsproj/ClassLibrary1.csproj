@@ -30,6 +30,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StandardCopyright>
+      Copyright (c) 2009, Andrew Arnott. All rights reserved.
+      Code licensed under the Ms-PL License:
+      http://opensource.org/licenses/ms-pl.html
+    </StandardCopyright>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -49,10 +56,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="JScript1.js" />
+    <EmbeddedResource Include="JScript1.js">
+      <Copyright>$(StandardCopyright)</Copyright>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\JavascriptPacker.targets" />
+  <Import Project="..\JsCssMinification.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

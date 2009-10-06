@@ -3,13 +3,13 @@ C#/VB projects' embedded resources (.js and .css files).
 
 == Applying automatic minification to your .js and .css embedded resources ==
 
-To apply to your project, copy the JavascriptPacker.targets and JsPackMsBuildTask.dll files
+To apply to your project, copy the JsCssMinification.targets and MinifierMsBuildTask.dll files
 to the directory with your project in it or some common directory.
 
 add the following line just BELOW the last .targets import:
 
 	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" /> <!-- existing line -->
-	<Import Project="JavascriptPacker.targets" />  <!-- Add this line -->
+	<Import Project="JsCssMinification.targets" />  <!-- Add this line -->
 
 That's all you need to do.  All EmbeddedResource .js items in your project
 will automatically be minified in any build where $(Configuration) == 'Release'
@@ -33,3 +33,13 @@ http://opensource.org/licenses/ms-pl.html
 			<Copyright>$(StandardCopyright)</Copyright>
 		</EmbeddedResource>
 	</ItemGroup>
+
+== Javascript errors from minification ==
+The Dean Edwards .js minifier is very aggressive (and thus very effective at
+shrinking files).  As a result, all semicolons are strictly required to be
+after every statement.  Missing semicolons will result in javascript errors
+at runtime from browsers.  If you find yourself getting these errors, 
+FireFox does a better job than IE at reporting exactly where the missing
+semi-colon is.
+You can read more about Javascript minification including less aggressive
+algorithms here: http://developer.yahoo.com/yui/compressor/

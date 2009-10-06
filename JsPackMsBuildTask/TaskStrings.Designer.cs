@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace JsPackMsBuildTask {
+namespace MinifierMsBuildTask {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace JsPackMsBuildTask {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("JsPackMsBuildTask.TaskStrings", typeof(TaskStrings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MinifierMsBuildTask.TaskStrings", typeof(TaskStrings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -6,14 +6,11 @@
 //-----------------------------------------------------------------------
 
 namespace DotNetOpenAuth.BuildTasks {
-	using System;
-	using System.Collections.Generic;
 	using System.IO;
-	using System.Linq;
 	using System.Text;
-	using JsPackMsBuildTask;
 	using Microsoft.Build.Framework;
 	using Microsoft.Build.Utilities;
+	using MinifierMsBuildTask;
 
 	/// <summary>
 	/// Compresses .js files.
